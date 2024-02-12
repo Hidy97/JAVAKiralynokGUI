@@ -1,5 +1,8 @@
 package main;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.Random;
 
 public class Tabla {
@@ -85,5 +88,18 @@ public class Tabla {
             }
         }
         return sorDb;
+    }
+    
+    public void fajl64() throws IOException{
+        Path fajlom = Path.of("tablak64.txt");
+        if (Files.exists(fajlom)) {
+            Files.delete(fajlom);
+        }
+        
+        for (int i = 1; i < 65; i++) {
+            Tabla tabla = new Tabla('*');
+            //belehelyezek mindig annyit, ahányadiknál tart
+            tabla.elhelyez(i);
+        }
     }
 }
