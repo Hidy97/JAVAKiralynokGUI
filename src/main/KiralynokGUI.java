@@ -26,7 +26,46 @@ public class KiralynokGUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        kiralynoMenu = new javax.swing.JMenuBar();
+        jatekMenu = new javax.swing.JMenu();
+        ujJatek = new javax.swing.JMenuItem();
+        settingsMenu = new javax.swing.JMenu();
+        jMenu1 = new javax.swing.JMenu();
+        sizeSix = new javax.swing.JMenuItem();
+        sizeEight = new javax.swing.JMenuItem();
+        sizeTwelve = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jatekMenu.setText("Játék");
+
+        ujJatek.setText("Új játék");
+        jatekMenu.add(ujJatek);
+
+        kiralynoMenu.add(jatekMenu);
+
+        settingsMenu.setText("Beállítások");
+
+        jMenu1.setText("Méret");
+
+        sizeSix.setText("6x6");
+        jMenu1.add(sizeSix);
+
+        sizeEight.setText("8x8");
+        jMenu1.add(sizeEight);
+
+        sizeTwelve.setText("12x12");
+        jMenu1.add(sizeTwelve);
+
+        settingsMenu.add(jMenu1);
+
+        jMenu2.setText("Mezők");
+        settingsMenu.add(jMenu2);
+
+        kiralynoMenu.add(settingsMenu);
+
+        setJMenuBar(kiralynoMenu);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -36,10 +75,11 @@ public class KiralynokGUI extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 277, Short.MAX_VALUE)
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
@@ -78,5 +118,14 @@ public class KiralynokGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jatekMenu;
+    private javax.swing.JMenuBar kiralynoMenu;
+    private javax.swing.JMenu settingsMenu;
+    private javax.swing.JMenuItem sizeEight;
+    private javax.swing.JMenuItem sizeSix;
+    private javax.swing.JMenuItem sizeTwelve;
+    private javax.swing.JMenuItem ujJatek;
     // End of variables declaration//GEN-END:variables
 }

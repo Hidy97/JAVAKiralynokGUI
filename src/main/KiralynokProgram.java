@@ -17,6 +17,11 @@ public class KiralynokProgram {
         System.out.println(tabla.uresOszlop(5));
         System.out.println("Van üres sor? Itt: 7");
         System.out.println(tabla.uresSor(7));
+        System.out.println("Üres oszlopok száma:");
+        System.out.println(tabla.uresOszlopokSzama());
+        System.out.println("Üres sorok száma:");
+        System.out.println(tabla.uresSorokSzama());
+        
     }
     
 }
