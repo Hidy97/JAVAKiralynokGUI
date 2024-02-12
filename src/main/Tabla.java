@@ -44,13 +44,27 @@ public class Tabla {
             }
         }
     }
-    
-    public boolean uresOszlop(){
-        return false;
+
+    public boolean uresOszlop(int oszlop) {
+        boolean vanUresOszlop = true;
+        for (int i = 0; i < 8; i++) {
+            if (T[i][oszlop] == 'K') {
+                vanUresOszlop = false;
+            }
+        }
+
+        return vanUresOszlop;
     }
-    
-    public boolean uresSor(){
-        return false;
+
+    public boolean uresSor(int sor) {
+        boolean vanUresSor = true;
+        for (int i = 0; i < 8; i++) {
+            if (T[sor][i] == 'K') {
+                vanUresSor = false;
+            }
+        }
+
+        return vanUresSor;
     }
 
 }

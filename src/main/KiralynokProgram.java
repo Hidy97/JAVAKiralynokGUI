@@ -13,6 +13,10 @@ public class KiralynokProgram {
         System.out.println("\nElhelyezés után:\n\n");
         tabla.elhelyez(8);
         tabla.megjelenit();
+        System.out.println("Van üres oszlop? Itt: 5");
+        System.out.println(tabla.uresOszlop(5));
+        System.out.println("Van üres sor? Itt: 7");
+        System.out.println(tabla.uresSor(7));
     }
     
 }
